@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pandulipi</title>
+    <link rel="stylesheet" href="assets/swipper.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/25c065fdb5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      
+      <nav>
+        <div class="logo">
+          <a><img src="images/pandulipijgec.png" alt="">Pandulipi</a>
+        </div>
+        <div class="toggle">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul class="menu">
+           <li><a href="#">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="#">Events Gallery</a></li>
+           <li><a href="#">Blog Page</a></li>
+           <li><a href="#">eLibrary</a></li>
+           <li><a href="#">Team</a></li>
+           <li><a href="#">Contact</a></li>
+           
+        </ul>
+     </nav>
+      
+    </header>
+    <section id="home1">
+      <div class="container">
+        <div class="intro">
+          <h4>Pandulipi</h4>
+          <p class="des">The Magazine Club of JGEC</p>
+          <p class="info">
+            Soon after the Jalpaiguri Government Engineering College came into
+            existence, the then students felt the need to create a society that
+            could have represented the latent creativity among students. Thus in
+            the year 1969 Magazine Club was constituted. <br /><br />Since it
+            got established, The Magazine Club of JGEC has been striding
+            steadily in the realm of Literature and Arts. Since 1969, the
+            Magazine Club has always put its nose on the grindstone and
+            reflected upon the essence of the college through its various
+            editions. With an impeccable record of 50+ glorious years, The
+            Magazine Club has become synonymous with pride and prestige for any
+            member, who has been a part of this great institution.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+    <section id="home2">
+      <div class="infobook">
+        <img src="images/2023book.webp" alt="" />
+        <div class="info2">
+          <a
+            >Pandulipi<br />
+            <span>2023</span></a
+          >
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+    <section id="latest-events">
+      <div class="events">
+        <h2>Latest Events</h2>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider">
+              <h2>Anual Award</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur quae ut, aperiam inventore, beatae a debitis, nam
+                praesentium corporis cumque dignissimos quibusdam soluta
+                obcaecati culpa deserunt quidem possimus! Quis, ipsa.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider">
+              <h2>Anual Award</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur quae ut, aperiam inventore, beatae a debitis, nam
+                praesentium corporis cumque dignissimos quibusdam soluta
+                obcaecati culpa deserunt quidem possimus! Quis, ipsa.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider">
+              <h2>Anual Award</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur quae ut, aperiam inventore, beatae a debitis, nam
+                praesentium corporis cumque dignissimos quibusdam soluta
+                obcaecati culpa deserunt quidem possimus! Quis, ipsa.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider">
+              <h2>Anual Award</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur quae ut, aperiam inventore, beatae a debitis, nam
+                praesentium corporis cumque dignissimos quibusdam soluta
+                obcaecati culpa deserunt quidem possimus! Quis, ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="footer">
+        <img src="images/jgeclogo.webp" alt="" />
+        <h1>
+          Pandulipi: The Magazine Club
+          <p style="font-size: 15px">
+            Jalpaiguri Government Engineering College
+          </p>
+        </h1>
+
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        
+        slidesPerView: 1,
+        loop: true,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          1800: {
+            slidesPerView: 3,
+            
+            spaceBetween: 90,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          660: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+          },
+          
+           
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $(".toggle").on("click", function(){
+          if($(".menu").hasClass("active")){
+            $(".menu").removeClass("active");
+            $(this).find("a").html("<i class='fa-solid fa-bars'></i>");
+          }else{
+            $(".menu").addClass("active")
+            $(this).find("a").html("<i class='fa-solid fa-xmark'></i>");
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
